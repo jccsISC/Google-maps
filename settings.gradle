@@ -1,0 +1,4 @@
+include ':menuMOdule'
+include ':geolocalizacionModule'
+include ':app'
+rootProject.name = "Ubicacion"

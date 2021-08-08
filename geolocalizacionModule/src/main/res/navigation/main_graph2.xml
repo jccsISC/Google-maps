@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragmentThree">
+
+    <fragment
+        android:id="@+id/geolocalizacionFragment"
+        tools:layout="@layout/fragment_geolocalizacion"
+        android:name="com.jccsisc.geolocalizacionmodule.fragments.geolocalizacionfragment.GeolocalizacionFragment"
+        android:label="GeolocalizacionFragment" >
+        <action
+            android:id="@+id/action_geolocalizacionFragment_to_otherFragment2"
+            app:destination="@id/otherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherFragment"
+        tools:layout="@layout/fragment_other"
+        android:name="com.jccsisc.geolocalizacionmodule.fragments.fragmentother.OtherFragment"
+        android:label="OtherFragment" />
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.jccsisc.geolocalizacionmodule.fragments.fragmetthree.FragmentThree"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <action
+            android:id="@+id/action_fragmentThree_to_geolocalizacionFragment"
+            app:destination="@id/geolocalizacionFragment" />
+    </fragment>
+</navigation>

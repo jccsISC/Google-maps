@@ -1,0 +1,7 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission_result_pending">El permiso está pendiente</string>
+    <string name="permission_result_granted">El permiso fue concedido</string>
+    <string name="permission_result_denied">El permiso fue negado</string>
+</resources>
